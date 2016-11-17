@@ -1,0 +1,6 @@
+{
+  "generator-sp": {
+    "capprojectname": "my-test-project",
+    "webpack": true
+  }
+}
