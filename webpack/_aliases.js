@@ -18,4 +18,5 @@ module.exports = {
   'underscore': 'lodash',
   'bootstrap': path.join(__dirname, '../node_modules/bootstrap/dist/js/bootstrap'),
   'simple-blocks': 'simple-blocks/dist/simpleblocks',
+  'gh-pages': 'gh-pages/bin/gh-pages',
 };
