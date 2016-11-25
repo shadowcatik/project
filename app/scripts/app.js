@@ -1,4 +1,9 @@
 import Backbone from 'backbone';
+import ghpages from 'gh-pages';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import {createStore} from 'redux';
+import {Provider} from 'react-redux';
 import Router from './Router';
 import ServerApi from './ServerAPI';
 // import preprocess from './preprocess';
