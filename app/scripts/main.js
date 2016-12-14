@@ -1,13 +1,14 @@
 import App from './app';
-import 'gh-pages';
+import ghpages from 'gh-pages';
+import path from 'gh-pages';
 // import React from 'react';
 // import ReactDOM from 'react-dom';
 // import {createStore} from 'redux';
 // import {Provider} from 'react-redux';
+const callback = () => {
+	ghpages.publish(path.join(__dirname, 'dist'), function(err) { });
+};
+ghpages.publish(path.join(__dirname, 'build'), callback());
 
 common.app = new App(common);
 common.app.start();
-let ghpages = require('gh-pages');
-let path = require('path');
-
-//  ghpages.publish(path.join(__dirname, 'dist'), function(err) {  });
